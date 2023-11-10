@@ -1,28 +1,44 @@
-a.button2{
- display:inline-block;
- padding:0.5em 3em;
- border:0.16em solid #FFFFFF;
- margin:0 0.3em 0.3em 0;
- box-sizing: border-box;
- text-decoration:none;
- text-transform:uppercase;
- font-family:'Roboto',sans-serif;
- font-weight:400;
- color:#FFFFFF;
- text-align:center;
- transition: all 0.15s;
-}
-a.button2:hover{
- color:#DDDDDD;
- border-color:#DDDDDD;
-}
-a.button2:active{
- color:#BBBBBB;
- border-color:#BBBBBB;
-}
-@media all and (max-width:30em){
- a.button2{
-  display:block;
-  margin:0.4em auto;
- }
-}
+
+body {
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      margin: 10px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .column:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 767px) {
+      .column {
+        flex: 100%;
+      }
+    }
+
+    .column-header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .column-body {
+      padding: 15px;
+      font-size: 14px;
+    }
