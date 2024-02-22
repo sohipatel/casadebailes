@@ -43,3 +43,7 @@ body {
       padding: 15px;
       font-size: 14px;
     }
+
+.footer {
+      padding-bottom: 0px!important;
+}
